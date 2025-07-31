@@ -5,7 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-
+/* Hero section - background img */
 .heroImg{
     background-image: url('assets/background.jpg');
     width: 100%;
@@ -29,6 +29,7 @@
   
 }
 
+/* Navbar */
 .nav{
     position:absolute;
     top: 0;
@@ -75,11 +76,13 @@ select{
     border: none;
 }
 
+
+/* Hero section - content */
 .content{
     z-index: 2; 
     width: 100%;
-    height: 400px;
-    padding: 0px 32px 32px 32px;
+    height: 65%;
+    padding: 0rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,7 +91,7 @@ select{
 }
 
 .content-margin{
-    margin: 0px 305px;
+    margin: 0px 18rem;
     height: 100%;
 }
 
@@ -151,4 +154,114 @@ select{
     background: rgb(229, 9, 20);
     cursor: pointer;
 } 
+
+/* Seperation */
+.divider{
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.red{
+        background-image: radial-gradient(
+                        50% 500% at 50% 330%,
+                        rgb(31, 9, 9) 15% , 
+                        rgba(184, 40, 105, 1) ,
+                        rgba(229, 9, 20, 1)  ,
+                        rgba(184, 40, 105, 1) ,
+                        rgb(32, 5, 5) 85%
+                    );
+    height: 7%;
+    
+}
+
+.blue{
+   background-image: radial-gradient(
+                    50% 500% at 50% -400%,
+                    #0d1c5bd9 60%,
+                    rgb(4, 12, 44) 90%,
+                    rgb(0 0 0 / 1) 100%
+                );
+    height: 93%;
+}
+
+.main{
+    height: 100vh;
+    background-color: black;
+    padding: 0 9.25rem;
+}
+
+/* Trending section */
+.trending{
+     height: 70%;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 4rem;
+}
+
+.trending h2{
+        font-size: 1.5rem;
+        font-weight: 650;
+}
+
+.movies{
+    margin-top: 1rem;
+    height: 90%;
+    display: flex;
+}
+
+.movies span{
+    height: 100%;
+    padding: 0.5rem 1.35rem;
+    position: relative;
+    transition: transform 0.2s ease-out;   
+    /* starts fast ends slow */
+}
+ 
+.movies span img{
+   border-radius: 0.5rem;
+   background-size: cover;
+   cursor: pointer;
+}
+
+.movies span::before
+{
+    position: absolute;
+    height: 50%;
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 3.5rem; 
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    font-weight: 700;
+    font-size: 6.3rem;
+    text-shadow: 3px 3px 5px black;
+    cursor: pointer;
+}
+
+.movies span:nth-child(1)::before{
+    content: "1";
+}
+
+.movies span:nth-child(2)::before{
+    content: "2";
+}
+
+.movies span:nth-child(3)::before{
+    content: "3";
+}
+.movies span:nth-child(4)::before{
+    content: "4";
+}
+
+.movies span:hover{
+    transform: scale(1.05);
+}
+
+
+
+
 
