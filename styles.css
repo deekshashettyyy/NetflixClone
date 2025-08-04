@@ -24,7 +24,7 @@
     position: absolute;
     inset: 0;             
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 1; 
   
 }
@@ -188,33 +188,26 @@ select{
 }
 
 .main{
-    height: 100vh;
     background-color: black;
-    padding: 0 9.25rem;
+    padding: 0 9rem;
 }
 
 /* Trending section */
 .trending{
-     height: 70%;
      display: flex;
      flex-direction: column;
      margin-bottom: 4rem;
 }
 
-.trending h2{
-        font-size: 1.5rem;
-        font-weight: 650;
-}
 
 .movies{
     margin-top: 1rem;
-    height: 90%;
     display: flex;
 }
 
 .movies span{
-    height: 100%;
-    padding: 0.5rem 1.35rem;
+    width:20%;
+    padding: 0.5rem 1.2rem;
     position: relative;
     transition: transform 0.2s ease-out;   
     /* starts fast ends slow */
@@ -226,18 +219,18 @@ select{
    cursor: pointer;
 }
 
+/* Numbers on top of img = ::before */
 .movies span::before
 {
     position: absolute;
-    height: 50%;
     width: 40%;
     left: 0;
     bottom: 0;
-    padding-bottom: 3.5rem; 
+    padding-bottom: 1.5rem; 
     color: rgb(255, 255, 255);
     z-index: 10;
     font-weight: 700;
-    font-size: 6.3rem;
+    font-size: 6rem;
     text-shadow: 3px 3px 5px black;
     cursor: pointer;
 }
@@ -257,11 +250,107 @@ select{
     content: "4";
 }
 
+
+
 .movies span:hover{
     transform: scale(1.05);
 }
 
+.scroll
+{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    background: rgb(0, 0, 0);   
+    padding-left: 0.75rem;
+}
+
+.scroll-btn{
+    height: 7.5rem;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.scroll-btn:hover
+{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-btn .icon{
+    fill : rgba(255, 255, 255, 0.7);
+}
+
+.scroll-btn:hover .icon{
+    fill : rgb(255, 255, 255);
+}
 
 
+/* More Section */
+.more{
+    margin-bottom: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.title{
+    margin-top: 1rem;
+}
 
+.reasonCards
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-top: 1rem;
+}
 
+.card{
+        background-image: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+        border-radius: 1rem;
+        position: relative;
+        padding: 1.5rem 1rem 5rem 1rem;
+        width: 230px;
+        box-sizing: border-box;
+}
+
+.heading h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+}
+
+.para p{
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* FAQ section */
+.questions{
+    margin-top: 1rem;
+}
+
+.questions li{
+    list-style: none;
+    padding: 1.5rem;
+    margin-bottom: 0.8rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgb(45, 45, 45);
+    font-size: 1.45rem;
+    font-weight: 480;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 1s ease-out 0s;
+}
+
+.questions li:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Footer Section */
