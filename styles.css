@@ -142,7 +142,7 @@ select{
     border-radius: 0.25rem;
 }
 
-.input button{
+.btn{
     width: 210px;
     height: 56px;
     margin-left: 0.5rem;
@@ -330,6 +330,10 @@ select{
 }
 
 /* FAQ section */
+.faq{
+    margin-bottom: 4rem;
+}
+
 .questions{
     margin-top: 1rem;
 }
@@ -354,3 +358,138 @@ select{
 }
 
 /* Footer Section */
+footer .sign-up
+{
+    margin: 0 6rem 4rem 6rem;
+}
+
+.sign-up h3{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.input2
+{
+    padding-top: 1rem;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+
+.input2 input{
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    box-sizing: border-box;
+    background-color: rgba(0 , 0 , 0 , 0.45);
+    color: rgba(255 , 255 , 255 , 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 0.25rem;
+    width: 75%;
+}
+
+/* Footer part2 */
+.footer{
+    padding-bottom: 6rem;
+}
+
+.footer span{
+    display: flex;
+    gap: 5px;
+}
+
+.call p, .call a{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-links{
+    margin-top: 2rem;
+}
+
+.footer-links div{
+    margin-bottom: 0.8rem;
+}
+
+.footer-links div ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-between;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.footer-links li{
+    list-style: none;
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 12px 18px 0px 0px;
+    width: 23%;
+    font-size: 0.87rem;
+}
+
+.footer-links li:active{
+    color: red;
+}
+
+.lang-btn
+{
+    margin-top: 3.5rem;
+}
+
+.india , .india p{
+    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.terms{
+    margin-top: 2rem;
+}
+
+.terms span p,
+.terms span a{
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 400;
+
+}
+
+.terms span a{
+    color: rgb(68, 142, 244);
+}
+
+
+.extra p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.extra a{
+    color: rgb(68, 142, 244);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* 
+ IMPORTANT: Hide paragraph initially 
+#learn-more {
+  display: none;
+}
+
+Show when #learn-more is targeted
+#learn-more:target {
+  display: block;
+}
+*/
